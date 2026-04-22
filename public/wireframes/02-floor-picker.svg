@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640" fill="none">
+  <rect width="360" height="640" fill="#fafafa"/>
+  <text x="32" y="56" font-family="system-ui,sans-serif" font-size="20" fill="#a31f34">ê</text>
+  <text x="180" y="88" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="800" fill="#a31f34">Hunt Library</text>
+  <text x="180" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="800" fill="#a31f34">Select the floor</text>
+  <rect x="40" y="148" width="280" height="44" rx="14" fill="#6b2d2d"/>
+  <text x="180" y="176" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#fff">Floor 4</text>
+  <rect x="40" y="204" width="280" height="44" rx="14" fill="#6b2d2d" opacity="0.45"/>
+  <text x="180" y="232" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#fff">Floor 3</text>
+  <rect x="40" y="260" width="280" height="44" rx="14" fill="#6b2d2d" opacity="0.45"/>
+  <text x="180" y="288" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#fff">Floor 2</text>
+  <rect x="40" y="316" width="280" height="44" rx="14" fill="#6b2d2d" opacity="0.45"/>
+  <text x="180" y="344" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#fff">Floor 1</text>
+  <rect x="40" y="372" width="280" height="44" rx="14" fill="#6b2d2d" opacity="0.45"/>
+  <text x="180" y="400" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#fff">Basement</text>
+  <text x="180" y="480" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#71717a">Wireframe: floor list before floor plan</text>
+</svg>

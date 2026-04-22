@@ -1,39 +1,66 @@
 import { Reveal } from "../components/Reveal";
 
+const frames = [
+  {
+    src: "/wireframes/01-campus-hub.svg",
+    title: "Campus hub",
+    caption:
+      "Opening view: campus-wide entry. Final product uses a live map (see demo) instead of only the four building tiles shown in this early wireframe.",
+  },
+  {
+    src: "/wireframes/02-floor-picker.svg",
+    title: "Floor selection — Hunt Library",
+    caption: "After choosing Hunt Library, students pick a floor (4 through basement) before opening the floor plan and check-in sheet.",
+  },
+  {
+    src: "/wireframes/03-floor4-checkin.svg",
+    title: "Floor 4 — map + check-in",
+    caption:
+      "Tables and group rooms on a floor plan with a check-in panel: room/table, start and end time (max three hours), and submit.",
+  },
+  {
+    src: "/wireframes/04-checked-in.svg",
+    title: "Checked in successfully",
+    caption:
+      "Confirmation state: location, room, time window, reminder to extend an hour before checkout, and QR / app path to renew.",
+  },
+] as const;
+
 export function WireframesSection() {
   return (
-    <section id="wireframes" className="border-t border-line/40 bg-zinc-50/50 py-16 md:py-24">
-      <div className="mx-auto max-w-2xl px-4">
+    <section id="wireframes" className="border-b border-line/60 bg-white py-16 md:py-24">
+      <div className="mx-auto max-w-6xl px-4">
         <Reveal>
-          <h2 className="text-center font-display text-3xl font-bold tracking-normal text-ink">Wireframe sketches</h2>
-          <p className="mx-auto mt-2 text-center font-sans leading-relaxed text-zinc-600">
-            Full ASCII layouts in{" "}
-            <a href="/WIREFRAMES.md" className="font-medium text-cmu hover:underline">
-              WIREFRAMES.md
-            </a>
-            . Philosophy in{" "}
-            <a href="/SCOTTY_SPOTS_DESIGN_PLAN.md" className="font-medium text-cmu hover:underline">
-              SCOTTY_SPOTS_DESIGN_PLAN.md
-            </a>
-            .
+          <h2 className="text-center font-display text-3xl font-bold tracking-normal text-ink md:text-4xl">
+            Wireframes
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl text-center font-sans text-lg leading-relaxed text-zinc-600">
+            Mid-fidelity mobile flows that guided the interactive demo below—same information architecture, with the home
+            hub evolved into a real campus map you can zoom and tap.
           </p>
         </Reveal>
-        <Reveal delay={80}>
-          <details className="mt-8 rounded-xl border border-line bg-white px-4 shadow-sm open:shadow-md transition-shadow">
-            <summary className="cursor-pointer py-3 font-bold text-ink">Hero &amp; problem cards (excerpt)</summary>
-            <pre className="mb-4 overflow-x-auto rounded-lg bg-zinc-50 p-3 font-mono text-[11px] leading-relaxed text-ink">
-              {`╔════════════════════════════════════════════════════════════════╗
-║  [Frustrated]     /     [Clean app · QR · ✓ Reserved]          ║
-╚════════════════════════════════════════════════════════════════╝`}
-            </pre>
-          </details>
-          <details className="mt-2 rounded-xl border border-line bg-white px-4 shadow-sm open:shadow-md transition-shadow">
-            <summary className="cursor-pointer py-3 font-bold text-ink">Interactive phone (excerpt)</summary>
-            <pre className="mb-4 overflow-x-auto rounded-lg bg-zinc-50 p-3 font-mono text-[11px] text-ink">
-              MEET SCOTTY SPOTS — QR Scan · Live Updates · Visual Map · Coverage
-            </pre>
-          </details>
-        </Reveal>
+
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {frames.map((f, i) => (
+            <Reveal key={f.title} delay={i * 70}>
+              <figure className="m-0 flex h-full flex-col">
+                <div className="overflow-hidden rounded-2xl border border-line bg-zinc-100 shadow-card">
+                  <img
+                    src={f.src}
+                    alt={f.title}
+                    className="block max-h-[min(520px,70vh)] w-full object-contain object-top"
+                    loading={i < 2 ? "eager" : "lazy"}
+                    decoding="async"
+                  />
+                </div>
+                <figcaption className="mt-3 flex flex-1 flex-col px-0.5">
+                  <span className="font-display text-sm font-bold tracking-normal text-cmu">{f.title}</span>
+                  <span className="mt-1 font-sans text-xs leading-relaxed text-zinc-600">{f.caption}</span>
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

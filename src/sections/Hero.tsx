@@ -1,3 +1,5 @@
+import { QrCodeGraphic } from "../components/QrCodeGraphic";
+
 /** Real legacy booking UI (cropped) — pairs with full figure in #reality. */
 function LegacySystemSnippet() {
   return (
@@ -61,14 +63,9 @@ export function Hero() {
                 </div>
               </div>
               <div className="mt-4 rounded-xl bg-gradient-to-br from-sky-100 to-pink-100 px-3 py-5 text-center">
-                <div
-                  className="mx-auto h-14 w-14 rounded-lg bg-ink"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(#fff 50%, transparent 50%), linear-gradient(90deg, #fff 50%, transparent 50%)",
-                    backgroundSize: "14px 14px",
-                  }}
-                />
+                <div className="mx-auto h-14 w-14 overflow-hidden rounded-lg border border-white/80 bg-white p-0.5 shadow-inner">
+                  <QrCodeGraphic className="h-full w-full" />
+                </div>
                 <p className="mb-0 mt-2 text-xs leading-normal text-zinc-500">Scan to reserve</p>
               </div>
               <div className="mt-3 flex items-center justify-center gap-2 rounded-xl bg-emerald-500 py-2.5 font-sans text-sm font-bold text-white">

@@ -1,22 +1,23 @@
+import { QrCodeGraphic } from "../components/QrCodeGraphic";
 import { Reveal } from "../components/Reveal";
 
 const steps = [
   {
     title: "Scan",
     label: "Step 1",
-    body: "Point your camera at the QR on your table or door so the app knows exactly where you are.",
+    body: "Unique QR on each table (Hunt, Sorrells) or at room doors; sign in with AndrewID, pick duration, and mark occupied. Optional extension before auto checkout. Rooms across Hunt, Sorrells, Gates, and Tepper can also be booked in-app before you arrive.",
     visual: "scan" as const,
   },
   {
     title: "View",
     label: "Step 2",
-    body: "Browse a live map: green slots are open, red ones are taken—no guessing from a room code list.",
+    body: "Choose a building and floor to open a 2D floor plan: green modules are available, red are occupied—integrated over time with scheduling data so gaps between lectures surface as usable study time.",
     visual: "map" as const,
   },
   {
     title: "Reserve",
     label: "Step 3",
-    body: "Confirm in one tap. Everyone else sees that seat flip to busy right away.",
+    body: "Confirm in one tap so peers see the seat flip to busy in real time; check out when you leave so the map stays honest for the next student.",
     visual: "success" as const,
   },
 ];
@@ -24,20 +25,15 @@ const steps = [
 function StepVisual({ kind }: { kind: "scan" | "map" | "success" }) {
   if (kind === "scan") {
     return (
-      <div className="flex items-end justify-center gap-8 py-2">
+      <div className="flex items-end justify-center gap-6 py-2 md:gap-8">
         <div className="relative shrink-0">
           <div className="h-4 w-[72px] rounded-t bg-cmu" />
           <div className="absolute left-2 top-full h-10 w-2 rounded-b bg-ink" />
           <div className="absolute right-2 top-full h-10 w-2 rounded-b bg-ink" />
         </div>
-        <div
-          className="h-14 w-14 shrink-0 rounded-lg bg-ink shadow-inner"
-          style={{
-            backgroundImage:
-              "linear-gradient(#fff 50%, transparent 50%), linear-gradient(90deg, #fff 50%, transparent 50%)",
-            backgroundSize: "14px 14px",
-          }}
-        />
+        <div className="h-[4.5rem] w-[4.5rem] shrink-0 overflow-hidden rounded-lg border border-zinc-200 bg-white p-1 shadow-inner">
+          <QrCodeGraphic className="h-full w-full" />
+        </div>
       </div>
     );
   }
@@ -76,9 +72,12 @@ export function HowSection() {
     <section id="how" className="border-b border-line/60 bg-gradient-to-b from-white via-zinc-50/40 to-white py-16 md:py-24">
       <Reveal>
         <div className="mx-auto max-w-2xl px-4 text-center">
-          <h2 className="font-display text-3xl font-bold tracking-normal text-ink md:text-4xl">How it works</h2>
+          <h2 className="font-display text-3xl font-bold tracking-normal text-ink md:text-4xl">
+            Information systems solution
+          </h2>
           <p className="mt-3 font-sans text-lg leading-relaxed text-zinc-600">
-            Three simple steps to find your perfect study space
+            QR-grounded check-in for tables and rooms, plus live 2D floor plans (green available, red occupied)—replacing
+            list-only tools that hide where space actually sits on a floor.
           </p>
         </div>
       </Reveal>

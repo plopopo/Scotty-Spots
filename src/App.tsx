@@ -5,7 +5,9 @@ import { Hero } from "./sections/Hero";
 import { HowSection } from "./sections/HowSection";
 import { ImpactSection } from "./sections/ImpactSection";
 import { ProblemSection } from "./sections/ProblemSection";
-import { StrategySection } from "./sections/StrategySection";
+import { SocialTheorySection } from "./sections/SocialTheorySection";
+import { StrategicAnalysisSection } from "./sections/StrategicAnalysisSection";
+import { TeamSection } from "./sections/TeamSection";
 import { TryDemoSection } from "./sections/TryDemoSection";
 import { WireframesSection } from "./sections/WireframesSection";
 
@@ -17,11 +19,13 @@ export default function App() {
         <Hero />
         <ProblemSection />
         <HowSection />
+        <WireframesSection />
         <TryDemoSection />
         <CoverageSection />
-        <StrategySection />
+        <StrategicAnalysisSection />
+        <SocialTheorySection />
         <ImpactSection />
-        <WireframesSection />
+        <TeamSection />
       </main>
       <Footer />
     </>

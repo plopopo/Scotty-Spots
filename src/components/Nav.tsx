@@ -1,10 +1,13 @@
 const links = [
   ["#reality", "Problem"],
-  ["#how", "How it works"],
-  ["#demo", "Try demo"],
+  ["#how", "Solution"],
+  ["#wireframes", "Wireframes"],
+  ["#demo", "Demo"],
   ["#coverage", "Coverage"],
   ["#strategy", "Strategy"],
-  ["#wireframes", "Wireframes"],
+  ["#theory", "Theory"],
+  ["#impact", "Impact"],
+  ["#team", "Team"],
 ] as const;
 
 export function Nav() {

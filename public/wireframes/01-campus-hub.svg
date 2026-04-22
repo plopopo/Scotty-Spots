@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640" fill="none">
+  <rect width="360" height="640" fill="#f4f4f5"/>
+  <rect x="0" y="0" width="360" height="44" fill="#fff" stroke="#e4e4e7"/>
+  <text x="180" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#18181b">SCOTTY&apos;S SPOTS</text>
+  <text x="180" y="52" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#71717a">Pick a building</text>
+  <rect x="24" y="72" width="312" height="420" rx="12" fill="#e7e5e4" stroke="#d6d3d1"/>
+  <text x="180" y="100" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#78716c">Campus map (wireframe)</text>
+  <rect x="56" y="140" width="72" height="48" rx="6" fill="#fff" stroke="#a8a29e"/>
+  <text x="92" y="170" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#444">Tepper</text>
+  <rect x="232" y="200" width="88" height="56" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="276" y="228" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#991b1b">HUNT</text>
+  <text x="276" y="242" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" fill="#991b1b">Library</text>
+  <rect x="48" y="320" width="80" height="44" rx="6" fill="#fff" stroke="#a8a29e"/>
+  <text x="88" y="346" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#444">Gates</text>
+  <rect x="200" y="380" width="96" height="48" rx="6" fill="#fff" stroke="#a8a29e"/>
+  <text x="248" y="408" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#444">Sorrells</text>
+  <rect x="48" y="520" width="264" height="40" rx="10" fill="#fafafa" stroke="#d4d4d8"/>
+  <text x="180" y="545" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#52525b">Scan QR instead ’</text>
+</svg>
