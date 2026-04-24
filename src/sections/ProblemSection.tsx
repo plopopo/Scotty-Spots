@@ -29,20 +29,20 @@ const cards = [
 
 export function ProblemSection() {
   return (
-    <section id="reality" className="border-b border-line/60 bg-zinc-50 py-16 md:py-20">
+    <section id="reality" className="border-b border-white/10 bg-ink py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4">
         <Reveal>
-          <h2 className="text-center font-display text-3xl font-bold tracking-normal text-ink md:text-4xl">
+          <h2 className="text-center font-display text-3xl font-bold tracking-normal text-white md:text-4xl">
             The Current Reality
           </h2>
-          <p className="mx-auto mt-2 max-w-xl text-center font-sans text-lg leading-relaxed text-zinc-600">
+          <p className="mx-auto mt-2 max-w-xl text-center font-sans text-lg leading-relaxed text-zinc-300">
             The existing study room system creates more problems than it solves
           </p>
         </Reveal>
 
         <Reveal delay={60}>
           <figure className="mx-auto mt-10 max-w-5xl">
-            <div className="overflow-hidden rounded-2xl border border-line bg-zinc-900 shadow-lift">
+            <div className="overflow-hidden rounded-2xl border border-white/15 bg-zinc-900 shadow-lift">
               <div className="flex items-center gap-2 border-b border-zinc-700/80 bg-zinc-800 px-3 py-2">
                 <span className="inline-flex gap-1" aria-hidden>
                   <span className="h-2 w-2 rounded-full bg-red-400/90" />
@@ -65,8 +65,8 @@ export function ProblemSection() {
                 />
               </div>
             </div>
-            <figcaption className="mx-auto mt-3 max-w-3xl px-1 text-center font-sans text-sm leading-relaxed text-zinc-600">
-              <strong className="text-ink">What students see today:</strong> a room list with &ldquo;Info&rdquo; links, capacity
+            <figcaption className="mx-auto mt-3 max-w-3xl px-1 text-center font-sans text-sm leading-relaxed text-zinc-400">
+              <strong className="text-zinc-100">What students see today:</strong> a room list with &ldquo;Info&rdquo; links, capacity
               and outlet icons, then a wide grid of 15-minute cells, mostly red for booked, green when a slot opens. It
               answers &ldquo;is this room free then?&rdquo; but not &ldquo;where on the floor is it?&rdquo; and it often
               needs horizontal scrolling on a laptop or phone.
@@ -77,7 +77,7 @@ export function ProblemSection() {
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {cards.map((c, i) => (
             <Reveal key={c.title} delay={i * 70}>
-              <article className="h-full rounded-2xl border border-line bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-lift">
+              <article className="h-full rounded-2xl border border-white/10 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-lift">
               <div
                 className={`flex h-11 w-11 items-center justify-center rounded-xl text-xl ${c.iconBg}`}
               >

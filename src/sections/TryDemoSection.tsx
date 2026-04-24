@@ -157,7 +157,7 @@ export function TryDemoSection() {
                         className="animate-fade-up motion-reduce:animate-none flex min-h-0 flex-1 flex-col px-3 pb-3 pt-2"
                       >
                         <p className="m-0 text-center font-display text-[11px] font-extrabold tracking-wide text-cmu">
-                          SCOTTY&apos;S SPOTS
+                          Scotty Spots
                         </p>
                         <p className="mb-1 mt-0.5 text-center font-sans text-[10px] text-zinc-500">
                           Pick a building on the map

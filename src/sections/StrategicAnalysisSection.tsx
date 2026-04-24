@@ -28,7 +28,7 @@ export function StrategicAnalysisSection() {
             },
             {
               title: "Scalability & versatility",
-              body: "Future filters (outlets, whiteboards, quiet zones) deepen fit. The same pattern can extend to dining seating, makerspaces, or parking as a step toward a unified \"smart campus\" experience anchored in real-time occupancy.",
+              body: "Many other aspects can be added to this app, such as a filter to find the perfect study spot (e.g. spots with power outlets, whiteboards, or “quiet areas”) This model can eventually be scaled beyond libraries to dining hall seating, makerspaces, or even parking lots, creating a more unified “Smart Campus” experience.",
               tag: "Growth path",
             },
           ].map((c, i) => (
@@ -46,7 +46,7 @@ export function StrategicAnalysisSection() {
           <div className="mx-auto mt-14 max-w-3xl rounded-2xl border border-cmu/20 bg-rose-50/40 p-6 md:p-8">
             <h3 className="font-display text-xl font-bold tracking-normal text-ink">Competitive positioning</h3>
             <p className="mt-3 font-sans text-sm leading-relaxed text-zinc-700">
-              CMU&apos;s incumbent tools center on <strong className="font-semibold text-ink">lists and coarse room types</strong>, often
+              CMU&apos;s current tools center on <strong className="font-semibold text-ink">lists and coarse room types</strong>, often
               mobile-unfriendly, with limited coverage of tables and classrooms. Scotty Spots differentiates through{" "}
               <strong className="font-semibold text-ink">visual floor context</strong>,{" "}
               <strong className="font-semibold text-ink">QR-grounded check-in</strong> at the actual seat or door, and{" "}
