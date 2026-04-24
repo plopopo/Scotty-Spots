@@ -31,13 +31,6 @@ const MEMBERS = [
   },
 ] as const;
 
-const PROCESS = [
-  "We met multiple times a week (in person and over messages) to stay aligned, unblock each other, and review progress.",
-  "Writing split clearly: Andrea wrote the solution writeup and led drafting and polish across the written work; Sivani wrote the social-theory piece (network effects, TTF, expected impact).",
-  "Jin’s design and wireframes set the visual direction; Andy shipped the interactive site so the public deliverable matched the story the PDFs told.",
-  "Shared artifacts (PDFs, wireframes, this repo) stayed in sync so the website and written submissions stayed one coherent project.",
-] as const;
-
 export function TeamSection() {
   return (
     <section id="team" className="border-b border-line/60 bg-white py-16 md:py-24">
@@ -72,17 +65,6 @@ export function TeamSection() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal delay={100}>
-          <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-line bg-soft p-6 md:p-8">
-            <h3 className="font-display text-lg font-bold tracking-normal text-ink">Collaboration process</h3>
-            <ul className="mt-4 list-inside list-disc space-y-2 font-sans text-sm leading-relaxed text-zinc-700">
-              {PROCESS.map((line) => (
-                <li key={line}>{line}</li>
-              ))}
-            </ul>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

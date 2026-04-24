@@ -9,9 +9,9 @@ const organizational = [
 
 const societal = [
   "Lowers day-to-day friction and stress associated with finding a seat in a high-workload environment.",
-  "Surfaces lesser-known locations, easing crowding in a few iconic spots and spreading load across campus.",
+  "Surfaces lesser-known locations, easing crowding in popular spots and spreading load across campus.",
   "Visual maps lower the barrier for students who do not yet know building layouts and support fairer access to space.",
-  "Long-term vision: restructure how the campus discovers and shares study capacity, not only incremental UI tweaks.",
+  "Long-term vision: restructure how the campus discovers and shares study capacity.",
 ];
 
 const signals = [

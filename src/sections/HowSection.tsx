@@ -5,19 +5,19 @@ const steps = [
   {
     title: "Scan",
     label: "Step 1",
-    body: "Unique QR on each table (Hunt, Sorrells) or at room doors; sign in with AndrewID, pick duration, and mark occupied. Optional extension before auto checkout. Rooms across Hunt, Sorrells, Gates, and Tepper can also be booked in-app before you arrive.",
+    body: "Unique QR on each table (Hunt, Sorrells) or at room doors; sign in with AndrewID, pick duration, and mark occupied. Rooms across Hunt, Sorrells, Gates, and Tepper can also be booked in-app before you arrive.",
     visual: "scan" as const,
   },
   {
     title: "View",
     label: "Step 2",
-    body: "Choose a building and floor to open a 2D floor plan: green modules are available, red are occupied. Over time this can tie into scheduling data so gaps between lectures show up as usable study time.",
+    body: "Choose a building and floor to open a 2D floor plan: green modules are available, red are occupied.",
     visual: "map" as const,
   },
   {
     title: "Reserve",
     label: "Step 3",
-    body: "Confirm in one tap so peers see the seat flip to busy in real time; check out when you leave so the map stays honest for the next student.",
+    body: "Confirm in one tap so peers see the seat flip to busy in real time; check out when you leave so the map stays correct for the next student.",
     visual: "success" as const,
   },
 ];
