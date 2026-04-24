@@ -1,12 +1,4 @@
-import { Fragment } from "react";
 import { Reveal } from "../components/Reveal";
-
-const VALUE_CHAIN = [
-  { k: "Students", v: "Scan / browse / reserve / release" },
-  { k: "Scotty Spots", v: "Maps, auth, rules, notifications" },
-  { k: "Campus data", v: "Scheduling, rooms, (future) sensors" },
-  { k: "Operations", v: "Utilization analytics & planning" },
-] as const;
 
 export function StrategicAnalysisSection() {
   return (
@@ -49,45 +41,6 @@ export function StrategicAnalysisSection() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal delay={120}>
-          <div className="mx-auto mt-14 max-w-4xl">
-            <h3 className="text-center font-display text-2xl font-bold tracking-normal text-ink">
-              Value chain (information flow)
-            </h3>
-            <p className="mx-auto mt-2 max-w-2xl text-center font-sans text-sm leading-relaxed text-zinc-600">
-              Our information system links people, places, and institutional data so decisions happen on a shared, live picture instead of a disconnected list.
-            </p>
-            <div className="mt-8 flex flex-col items-center gap-1 rounded-2xl border border-line bg-soft p-6 md:flex-row md:flex-wrap md:justify-center md:gap-0 md:p-8">
-              {VALUE_CHAIN.flatMap((step, idx) => {
-                const box = (
-                  <div
-                    key={step.k}
-                    className="w-full max-w-sm flex-1 rounded-xl border border-line/80 bg-white/90 px-4 py-3 text-center md:max-w-[11rem] md:py-4"
-                  >
-                    <span className="font-display text-sm font-extrabold text-cmu">{step.k}</span>
-                    <span className="mt-1 block font-sans text-xs leading-snug text-zinc-600">{step.v}</span>
-                  </div>
-                );
-                if (idx >= VALUE_CHAIN.length - 1) return [box];
-                const sep = (
-                  <Fragment key={`${step.k}-sep`}>
-                    <span className="py-1 font-mono text-cmu md:hidden" aria-hidden>
-                      ↓
-                    </span>
-                    <span className="hidden px-2 font-mono text-lg text-cmu md:inline" aria-hidden>
-                      →
-                    </span>
-                  </Fragment>
-                );
-                return [box, sep];
-              })}
-            </div>
-            <p className="mx-auto mt-4 max-w-2xl text-center font-sans text-xs text-zinc-500">
-              Arrows implied: student actions update availability for peers; aggregated patterns feed facilities and campus planning.
-            </p>
-          </div>
-        </Reveal>
 
         <Reveal delay={80}>
           <div className="mx-auto mt-14 max-w-3xl rounded-2xl border border-cmu/20 bg-rose-50/40 p-6 md:p-8">

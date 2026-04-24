@@ -9,7 +9,7 @@ const MEMBERS = [
       "Built this presentation website. Assisted with brainstorming of actual product design. Also designed the website's layout and flow.",
   },
   {
-    name: "Sivani Ryal",
+    name: "Sivani Ryali",
     role: "Researcher",
     major: "Freshman in IS",
     contributions:
