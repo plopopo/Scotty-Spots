@@ -7,11 +7,12 @@ import type { CampusBuildingId } from "../data/campusPlaces";
 const copy: Record<CampusBuildingId, string> = {
   tepper:
     "Tepper School of Business: course-aware release windows for breakout and team rooms; study spaces fold into the same live map as the rest of campus.",
-  hunt: "Hunt Library: the largest cluster of tables, group rooms, and quiet floors on the network—ideal anchor for adoption.",
+  hunt:
+    "Hunt Library: the largest cluster of tables, group rooms, and quiet floors on the network, and a strong anchor for adoption.",
   gates:
     "Gates Center / GHC: dense study carrels and collaboration zones near CS coursework; real-time availability keeps traffic predictable.",
   sorrells:
-    "Sorrells Engineering Library: high-use tables and group areas off the Schenley lawn side—surfaced with the same QR + floor-plan experience.",
+    "Sorrells Engineering Library: high-use tables and group areas off the Schenley lawn side, with the same QR and floor-plan experience.",
 };
 
 export function CoverageSection() {
@@ -35,7 +36,7 @@ export function CoverageSection() {
             Every corner of campus covered
           </h2>
           <p className="mx-auto mt-2 max-w-2xl text-center font-sans text-lg leading-relaxed text-zinc-600">
-            Tepper, Hunt Library, Gates / GHC, and Sorrells on a real map of the CMU core—where we prioritize rollout so live
+            Tepper, Hunt Library, Gates / GHC, and Sorrells on a real map of the CMU core, where we prioritize rollout so live
             availability matches where students already cluster (scaling toward 350+ spaces across campus over time).
           </p>
         </Reveal>

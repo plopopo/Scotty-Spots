@@ -1,6 +1,6 @@
 import { QrCodeGraphic } from "../components/QrCodeGraphic";
 
-/** Real legacy booking UI (cropped) — pairs with full figure in #reality. */
+/** Real legacy booking UI (cropped); pairs with full figure in #reality. */
 function LegacySystemSnippet() {
   return (
     <div className="flex flex-col gap-2">
@@ -29,7 +29,7 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-hero-stripes opacity-95" aria-hidden />
       <div className="relative mx-auto w-full max-w-5xl">
         <div className="relative mx-auto mb-10 min-h-[300px] md:mb-12 md:h-[min(340px,40vw)] md:max-w-none">
-          {/* Problem card — gentle float; text not rotated */}
+          {/* Problem card: gentle float; text not rotated */}
           <div
             className="md:animate-float-slow motion-reduce:!animate-none md:absolute md:left-0 md:top-[10%] md:z-[1] md:w-[58%] md:max-w-[280px]"
             style={{ transformStyle: "preserve-3d" }}
@@ -59,7 +59,7 @@ export function Hero() {
                   <p className="m-0 font-display text-xs font-bold leading-tight tracking-normal text-zinc-500">
                     Scotty Spots
                   </p>
-                  <p className="m-0 font-sans text-base font-bold leading-snug text-ink">Hunt Library — 3rd Floor</p>
+                  <p className="m-0 font-sans text-base font-bold leading-snug text-ink">Hunt Library, 3rd floor</p>
                 </div>
               </div>
               <div className="mt-4 rounded-xl bg-gradient-to-br from-sky-100 to-pink-100 px-3 py-5 text-center">

@@ -21,7 +21,7 @@ type Props = {
   onBuildingSelect: (id: CampusBuildingId) => void;
 };
 
-/** Compact OSM map for the phone shell — zoom / pan enabled (wheel inside map). */
+/** Compact OSM map for the phone shell; zoom and pan enabled (wheel inside map). */
 export function PhoneCampusMap({ onBuildingSelect }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
@@ -57,7 +57,7 @@ export function PhoneCampusMap({ onBuildingSelect }: Props) {
         icon: pinIcon(p.label, formatDemoSpacesShort(n)),
       }).addTo(map);
       m.on("click", () => onPick(p.id));
-      m.bindTooltip(`${p.label} — ${formatDemoSpacesAvailable(n)} — tap`, {
+      m.bindTooltip(`${p.label}: ${formatDemoSpacesAvailable(n)} (tap)`, {
         direction: "top",
         offset: [0, -10],
       });

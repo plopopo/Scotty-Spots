@@ -5,7 +5,7 @@ export type Spot = { id: string; label: string; free: boolean };
 
 export type PlacedSpot = Spot & {
   shortLabel: string;
-  /** viewBox 0–100 × 0–92 coordinates */
+  /** viewBox 0-100 x 0-92 coordinates */
   x: number;
   y: number;
   w: number;
@@ -13,7 +13,7 @@ export type PlacedSpot = Spot & {
   kind: "table" | "room";
 };
 
-/** Hunt Library 3rd floor — simplified layout: open tables west of corridor, study rooms east. */
+/** Hunt Library 3rd floor: simplified layout; open tables west of corridor, study rooms east. */
 export const INITIAL_PLACED_SPOTS: PlacedSpot[] = [
   { id: "3b", label: "3B Table", shortLabel: "3B", free: true, kind: "table", x: 7, y: 14, w: 30, h: 12 },
   { id: "3c", label: "3C Table", shortLabel: "3C", free: false, kind: "table", x: 7, y: 28, w: 30, h: 12 },

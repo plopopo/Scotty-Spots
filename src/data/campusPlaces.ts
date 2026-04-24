@@ -1,5 +1,5 @@
 /**
- * CMU main campus — building anchors (WGS84), aligned to OpenStreetMap building centroids
+ * CMU main campus: building anchors (WGS84), aligned to OpenStreetMap building centroids
  * (Nominatim) so pins sit on the actual footprints on the basemap.
  *
  * Tepper: main Tepper School building on Forbes. Hunt: 4909 Frew St library amenity.

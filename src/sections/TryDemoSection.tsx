@@ -21,7 +21,7 @@ export function TryDemoSection() {
   const [selectedTable, setSelectedTable] = useState<number | null>(null);
 
   const seatLabel =
-    selectedTable !== null ? `Table ${selectedTable}` : selectedRoom !== null ? `Room ${selectedRoom}` : "—";
+    selectedTable !== null ? `Table ${selectedTable}` : selectedRoom !== null ? `Room ${selectedRoom}` : "None";
 
   const resetDemo = useCallback(() => {
     setScreen("hub");
@@ -183,7 +183,7 @@ export function TryDemoSection() {
                           {formatDemoSpacesAvailable(DEMO_SPACES_AVAILABLE[nudgeBuilding])} (demo)
                         </p>
                         <p className="m-0 font-sans text-sm leading-relaxed text-zinc-600">
-                          This walkthrough follows <strong>Hunt Library</strong>—floor picker and check-in wireframes—so
+                          This walkthrough follows <strong>Hunt Library</strong> (floor picker and check-in wireframes) so
                           you can see tables, rooms, and timing in one flow.
                         </p>
                         <div className="mt-2 flex flex-col gap-2">
@@ -288,7 +288,7 @@ export function TryDemoSection() {
                         )}
                         <p className="mb-0 mt-1 text-center font-sans text-[9px] leading-snug text-zinc-500">
                           {demoFloor === "Floor 4"
-                            ? "Illustrative layout (walls, corridor, open tables, east study rooms)—not an official Hunt floor plan."
+                            ? "Illustrative layout (walls, corridor, open tables, east study rooms). Not an official Hunt floor plan."
                             : "Placeholder plate for this floor; green/red show how availability would read in the app."}
                         </p>
 
@@ -358,7 +358,7 @@ export function TryDemoSection() {
                       >
                         <p className="m-0 font-display text-lg font-extrabold text-cmu">Checked In Successfully.</p>
                         <p className="m-0 font-sans text-sm font-semibold text-[#4a3028]">
-                          Hunt Library — {demoFloor}
+                          Hunt Library, {demoFloor}
                         </p>
                         <p className="m-0 font-display text-2xl font-extrabold text-[#4a3028]">{seatLabel}</p>
                         <p className="m-0 font-mono text-lg font-bold text-[#4a3028]">14:00 ~ 17:00</p>

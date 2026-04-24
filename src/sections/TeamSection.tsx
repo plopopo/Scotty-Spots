@@ -4,29 +4,30 @@ const MEMBERS = [
   {
     name: "Andy Xiong",
     role: "Developer",
-    strengths: "Coding",
+    major: "Freshman in IS",
     contributions:
       "Built this presentation website. Assisted with brainstorming of actual product design. Also designed the website's layout and flow.",
   },
   {
-    name: "Sivani Ryali",
+    name: "Sivani Ryal",
     role: "Researcher",
-    strengths: "Research, writing",
+    major: "Freshman in IS",
     contributions:
-      "Authored the social theory applications writeup—network effects, task–technology fit (TTF), and expected impact—and worked with Andrea on drafting and polish for the written submissions.",
+      "Drafted the social impact analysis and the expected impact, integrated this and the product features into the poster",
   },
   {
     name: "Jin Kim",
     role: "Designer",
-    strengths: "Design",
-    contributions: "Led visual design and wireframes—layouts and flows the team used to align before build and review.",
+    major: "Sophomore in Fine Arts",
+    contributions:
+      "Led visual design and wireframes: layouts and flows the team used to align before build and review.",
   },
   {
     name: "Andrea Joseph",
-    role: "Solution writeup",
-    strengths: "User testing, research, analysis",
+    role: "Researcher",
+    major: "Freshman in IS and Stat/ML",
     contributions:
-      "Authored the solution writeup: problem statement, proposed solution (QR, floor plans, scheduling integration), and strategic analysis. Led drafting and polish on the written deliverables with Sivani so both documents stayed clear and aligned.",
+      "Drafted the problem statement and strategic analysis, documented the final solution, and integrated this information into the poster.  ",
   },
 ] as const;
 
@@ -46,7 +47,7 @@ export function TeamSection() {
             Team & collaboration
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-center font-sans text-lg leading-relaxed text-zinc-600">
-            Split across solution writing, social-theory writing, design, and development—with frequent check-ins so PDFs,
+            Split across solution writing, social-theory writing, design, and development, with frequent check-ins so PDFs,
             wireframes, and the live site stayed aligned.
           </p>
         </Reveal>
@@ -58,8 +59,8 @@ export function TeamSection() {
                 <h3 className="font-display text-lg font-bold tracking-normal text-ink">{m.name}</h3>
                 <p className="mt-1 font-sans text-xs font-semibold uppercase tracking-wide text-cmu">{m.role}</p>
                 <div className="mt-4 border-t border-line/80 pt-4">
-                  <p className="m-0 font-sans text-[11px] font-bold uppercase tracking-wide text-zinc-500">Strengths</p>
-                  <p className="mt-1 font-sans text-sm leading-relaxed text-zinc-700">{m.strengths}</p>
+                  <p className="m-0 font-sans text-[11px] font-bold uppercase tracking-wide text-zinc-500">Major</p>
+                  <p className="mt-1 font-sans text-sm leading-relaxed text-zinc-700">{m.major}</p>
                 </div>
                 <div className="mt-3 flex-1">
                   <p className="m-0 font-sans text-[11px] font-bold uppercase tracking-wide text-zinc-500">

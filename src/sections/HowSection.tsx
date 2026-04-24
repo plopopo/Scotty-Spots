@@ -11,7 +11,7 @@ const steps = [
   {
     title: "View",
     label: "Step 2",
-    body: "Choose a building and floor to open a 2D floor plan: green modules are available, red are occupied—integrated over time with scheduling data so gaps between lectures surface as usable study time.",
+    body: "Choose a building and floor to open a 2D floor plan: green modules are available, red are occupied. Over time this can tie into scheduling data so gaps between lectures show up as usable study time.",
     visual: "map" as const,
   },
   {
@@ -76,7 +76,7 @@ export function HowSection() {
             Information systems solution
           </h2>
           <p className="mt-3 font-sans text-lg leading-relaxed text-zinc-600">
-            QR-grounded check-in for tables and rooms, plus live 2D floor plans (green available, red occupied)—replacing
+            QR-grounded check-in for tables and rooms, plus live 2D floor plans (green available, red occupied), replacing
             list-only tools that hide where space actually sits on a floor.
           </p>
         </div>

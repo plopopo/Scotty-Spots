@@ -56,7 +56,7 @@ export function CampusCoverageMap({ onPlaceSelect }: Props) {
         icon: pinIcon(p.label, formatDemoSpacesShort(n)),
       }).addTo(map);
       m.on("click", () => onSelect(p.id));
-      m.bindTooltip(`${p.label} — ${formatDemoSpacesAvailable(n)}`, { direction: "top", offset: [0, -12] });
+      m.bindTooltip(`${p.label}: ${formatDemoSpacesAvailable(n)}`, { direction: "top", offset: [0, -12] });
     }
 
     mapInstance.current = map;

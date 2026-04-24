@@ -1,5 +1,5 @@
 /**
- * Stylized Hunt Library–style floor plate: perimeter walls, corridor core,
+ * Stylized Hunt Library-style floor plate: perimeter walls, corridor core,
  * open reading tables, and east-wing study rooms (not an official floor plan).
  */
 type Props = {
@@ -9,11 +9,11 @@ type Props = {
   onSelectTable: (table: number) => void;
 };
 
-/** Demo occupancy — green = available, red = occupied */
+/** Demo occupancy: green = available, red = occupied */
 const OCCUPIED_TABLES = new Set([4, 11, 18]);
 const OCCUPIED_ROOMS = new Set([4]);
 
-/** Table center positions (x, y) in SVG space — open floor west of corridor */
+/** Table center positions (x, y) in SVG space; open floor west of corridor */
 const TABLE_SPOTS: { n: number; x: number; y: number }[] = [
   { n: 1, x: 22, y: 28 },
   { n: 2, x: 38, y: 28 },

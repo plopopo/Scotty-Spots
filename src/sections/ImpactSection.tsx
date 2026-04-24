@@ -3,14 +3,14 @@ import { Reveal } from "../components/Reveal";
 const organizational = [
   "App-driven sourcing of availability reduces time lost wandering between floors and buildings.",
   "Utilization patterns (popular zones, times of day) can inform future study-space investments and operations.",
-  "Integrating classrooms and tables—not only formal study rooms—expands the usable network of spaces the institution can reason about.",
+  "Integrating classrooms and tables (not only formal study rooms) expands the usable network of spaces the institution can reason about.",
   "Over time, broader adoption improves the fidelity of “what is free now” for everyone on the network.",
 ];
 
 const societal = [
   "Lowers day-to-day friction and stress associated with finding a seat in a high-workload environment.",
   "Surfaces lesser-known locations, easing crowding in a few iconic spots and spreading load across campus.",
-  "Visual maps lower the barrier for students who do not yet know building layouts—supporting fairer access to space.",
+  "Visual maps lower the barrier for students who do not yet know building layouts and support fairer access to space.",
   "Long-term vision: restructure how the campus discovers and shares study capacity, not only incremental UI tweaks.",
 ];
 
@@ -29,7 +29,7 @@ export function ImpactSection() {
             Expected impact
           </h2>
           <p className="mx-auto mt-3 max-w-3xl text-center font-sans text-lg leading-relaxed text-zinc-300">
-            Organizational and societal outcomes we expect if Scotty Spots is adopted—summarized from our social-impact and
+            Organizational and societal outcomes we expect if Scotty Spots is adopted, summarized from our social-impact and
             solution writeups.
           </p>
         </Reveal>
@@ -76,10 +76,10 @@ export function ImpactSection() {
 
         <Reveal delay={140}>
           <blockquote className="mx-auto mt-12 max-w-2xl border-l-4 border-cmu pl-5 font-display text-lg font-medium italic leading-snug tracking-normal text-zinc-100 md:text-xl">
-            “We expect the solution to resolve student frustration and time inefficiencies from wandering—and, over time, to
+            “We expect the solution to resolve student frustration and time inefficiencies from wandering, and over time, to
             restructure how people find study spots campus-wide through app-driven information.”
             <cite className="mt-3 block font-sans text-sm not-italic text-zinc-500">
-              — Paraphrased from our expected-impact writeup
+              Paraphrased from our expected-impact writeup
             </cite>
           </blockquote>
         </Reveal>

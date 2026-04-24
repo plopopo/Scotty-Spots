@@ -17,7 +17,7 @@ export function StrategicAnalysisSection() {
             Strategic analysis
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-center font-sans text-lg leading-relaxed text-zinc-600">
-            How Scotty Spots connects to CMU&apos;s operations, student experience, and longer-term campus strategy—
+            How Scotty Spots connects to CMU&apos;s operations, student experience, and longer-term campus strategy,
             grounded in our solution writeup.
           </p>
         </Reveal>
@@ -26,17 +26,17 @@ export function StrategicAnalysisSection() {
           {[
             {
               title: "Operational efficiency",
-              body: "For University Facilities, granular usage data shows which areas are busiest and when—supporting renovation budgets, staffing, and energy decisions. Expanding beyond group study rooms to tables and classrooms unlocks more usable capacity from the same footprint.",
+              body: "For University Facilities, granular usage data shows which areas are busiest and when, which supports renovation budgets, staffing, and energy decisions. Expanding beyond group study rooms to tables and classrooms unlocks more usable capacity from the same footprint.",
               tag: "Value creation",
             },
             {
               title: "Student value & equity",
-              body: "At a high-rigor institution, searching for a seat adds stress. A reliable, seconds-fast path to an open spot supports wellness and satisfaction. A visual map gives every student—especially newcomers—the same mental model of where space actually is, not just a vague room name.",
+              body: "At a high-rigor institution, searching for a seat adds stress. A reliable, seconds-fast path to an open spot supports wellness and satisfaction. A visual map gives every student, especially newcomers, the same mental model of where space actually is, not just a vague room name.",
               tag: "Stakeholders",
             },
             {
               title: "Scalability & versatility",
-              body: "Future filters (outlets, whiteboards, quiet zones) deepen fit. The same pattern can extend to dining seating, makerspaces, or parking—steps toward a unified “smart campus” experience anchored in real-time occupancy.",
+              body: "Future filters (outlets, whiteboards, quiet zones) deepen fit. The same pattern can extend to dining seating, makerspaces, or parking as a step toward a unified \"smart campus\" experience anchored in real-time occupancy.",
               tag: "Growth path",
             },
           ].map((c, i) => (
@@ -56,7 +56,7 @@ export function StrategicAnalysisSection() {
               Value chain (information flow)
             </h3>
             <p className="mx-auto mt-2 max-w-2xl text-center font-sans text-sm leading-relaxed text-zinc-600">
-              Our information system links people, places, and institutional data so decisions happen on a shared, live picture—not a disconnected list.
+              Our information system links people, places, and institutional data so decisions happen on a shared, live picture instead of a disconnected list.
             </p>
             <div className="mt-8 flex flex-col items-center gap-1 rounded-2xl border border-line bg-soft p-6 md:flex-row md:flex-wrap md:justify-center md:gap-0 md:p-8">
               {VALUE_CHAIN.flatMap((step, idx) => {
@@ -98,8 +98,8 @@ export function StrategicAnalysisSection() {
               <strong className="font-semibold text-ink">visual floor context</strong>,{" "}
               <strong className="font-semibold text-ink">QR-grounded check-in</strong> at the actual seat or door, and{" "}
               <strong className="font-semibold text-ink">real-time availability</strong> designed for quick, low-friction
-              decisions—positioning the product as the “where is it free{" "}
-              <span className="whitespace-nowrap font-semibold text-cmu">right now</span>?” layer above traditional scheduling grids.
+              decisions, positioning the product as the &quot;where is it free{" "}
+              <span className="whitespace-nowrap font-semibold text-cmu">right now</span>?&quot; layer above traditional scheduling grids.
             </p>
           </div>
         </Reveal>

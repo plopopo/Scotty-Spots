@@ -67,7 +67,7 @@ export function ProblemSection() {
             </div>
             <figcaption className="mx-auto mt-3 max-w-3xl px-1 text-center font-sans text-sm leading-relaxed text-zinc-600">
               <strong className="text-ink">What students see today:</strong> a room list with &ldquo;Info&rdquo; links, capacity
-              and outlet icons, then a wide grid of 15-minute cells—mostly red for booked, green when a slot opens. It
+              and outlet icons, then a wide grid of 15-minute cells, mostly red for booked, green when a slot opens. It
               answers &ldquo;is this room free then?&rdquo; but not &ldquo;where on the floor is it?&rdquo; and it often
               needs horizontal scrolling on a laptop or phone.
             </figcaption>

@@ -1,4 +1,4 @@
-/** Non–Floor-4 demo: abstract plate + legend (no claim to real geometry). */
+/** Non-Floor-4 demo: abstract plate + legend (no claim to real geometry). */
 export function HuntDemoFloorPlaceholder({ floorLabel }: { floorLabel: string }) {
   return (
     <div className="rounded-xl border border-zinc-300/90 bg-[#eef0f3] p-3 shadow-inner">
@@ -15,7 +15,7 @@ export function HuntDemoFloorPlaceholder({ floorLabel }: { floorLabel: string })
         <rect x="124" y="84" width="64" height="36" rx="4" fill="#86efac" stroke="#16a34a" strokeWidth="0.8" />
         <rect x="124" y="132" width="64" height="36" rx="4" fill="#fca5a5" stroke="#dc2626" strokeWidth="0.8" />
         <text x="100" y="196" textAnchor="middle" className="fill-zinc-500" fontSize="7" style={{ fontFamily: "system-ui" }}>
-          Abstract zones — not {floorLabel} geometry
+          Abstract zones, not {floorLabel} geometry
         </text>
       </svg>
       <p className="mb-0 mt-2 text-center font-sans text-[9px] leading-snug text-zinc-600">
